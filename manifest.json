@@ -1,0 +1,10 @@
+{
+  "version": "1.0.0",
+  "manifest_version": 3,
+  "name": "Spanish Dish Extension",
+  "action": {
+    "default_popup": "js/index.html",
+    "default_title": "React Chrome Extension"
+  },
+  "content_security_policy_extention": "style-src 'self' https://unpkg.com"
+}
