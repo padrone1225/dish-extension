@@ -31,17 +31,18 @@ p {
 }
 
 .search-bar .search-item {
+  margin-left: 5px;
   position: absolute;
-  background-color: rgb(240, 240, 240);
+  background-color: #131823;
   width: 100%;
 }
 
 .search-bar .search-item div {
-  color: #424242;
+  color: white;
   font-weight: 700;
-  padding: 2px 7px;
+  padding: 5px 7px;
   cursor: pointer;
-  border-bottom: 1px solid rgb(10, 10, 10);
+  border: 1px solid rgb(255, 255, 255);
 }
 
 .search-bar .search-icon {
