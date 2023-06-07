@@ -13,6 +13,7 @@ p {
   border-radius: 10px;
   background-color: #0d1119;
   box-sizing: content-box;
+  overflow: hidden;
 }
 
 .search-bar {
