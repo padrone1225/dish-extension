@@ -36,7 +36,7 @@ export const Extention = () => {
   }, [keyword]);
 
   const gotoFullPage = () => {
-    chrome.tabs.create({ url: "http://localhost:3000/full" });
+    chrome.tabs.create({ url: "https://dish-extension.netlify.app/full" });
   };
   return (
     <div className="board">
