@@ -1,5 +1,9 @@
+/**
+ * Extension CSS Style
+ */
 h1,
 h2,
+h3,
 p {
   margin: 0;
 }
@@ -23,7 +27,7 @@ p {
 .search-bar input {
   width: 100%;
   border-radius: 6px;
-  padding: 8px 11px 8px 41px;
+  padding: 8px 11px 8px 50px;
   box-shadow: 0 0 0 1px #5b6178;
   color: white;
   background-color: #131823;
@@ -216,4 +220,239 @@ p {
 
 .back-hover-none {
   background-color: #171f2f;
+}
+
+/**
+ * Full Recipe Page CSS Style
+ */
+
+.full {
+  min-height: 100vh;
+  width: 100%;
+  background-color: #0d1119;
+  position: relative;
+}
+
+.dish-panel {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 6px;
+  background-color: #131823;
+  margin: 32px;
+  z-index: 1;
+}
+
+.body {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.add-button {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 20px;
+}
+
+.panel {
+  background-color: white;
+  border-radius: 6px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 12px;
+  overflow: auto;
+}
+
+.left-list {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.left-list .list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding-top: 32px;
+}
+
+.left-list button {
+  border-radius: 6px;
+  padding: 7px 75px;
+  font-size: 20px;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.pagenation-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 0;
+}
+
+.pagenation {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+}
+
+.right-description {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  padding: 32px;
+}
+
+.right-description .description {
+  background-color: #17cfc4;
+  padding: 32px;
+  width: 70%;
+  border-radius: 6px;
+  display: flex;
+  gap: 12px;
+  flex-direction: column;
+}
+
+.right-description img {
+  border-radius: 6px;
+}
+
+.right-description .information {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.information .info-row {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 100px;
+}
+
+.info-row .full-info {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.footer-icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px 0;
+}
+
+.footer-icons .link {
+  display: flex;
+  gap: 16px;
+}
+
+/**
+ * Modal CSS Style
+ */
+
+.modal::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.modal {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  z-index: 3;
+}
+
+.modal-container {
+  position: absolute;
+  min-width: 50rem;
+  max-width: 55rem;
+  background-color: white;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  border-radius: 6px;
+  display: flex;
+  flex-direction: column;
+}
+
+.modal-header {
+  display: flex;
+  justify-content: flex-end;
+  padding: 12px;
+}
+
+.modal-body {
+  border-top: 1px solid rgba(0, 0, 0, 0.8);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.8);
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 24px 40px;
+}
+
+.info-col {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+}
+
+.col {
+  display: grid;
+  grid-template-columns: 2fr 5fr;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.col.descript {
+  grid-template-columns: 2fr 6fr;
+}
+
+.col label {
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.col input {
+  width: 100%;
+  border-radius: 6px;
+  padding: 10px 15px;
+  font-size: 17px;
+}
+
+.modal-footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 36px;
+}
+
+.modal-body button {
+  padding: 10px 45px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
 }

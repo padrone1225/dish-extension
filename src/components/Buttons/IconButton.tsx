@@ -7,14 +7,14 @@ interface IconButtonProperties {
   name: IconNames;
   size: number;
   viewBox: string;
-  onChange?: () => void;
+  onClick?: () => void;
 }
 
 export const IconButton = ({
   name,
   size,
   viewBox,
-  onChange,
+  onClick,
 }: IconButtonProperties) => {
   const [hover, setHover] = useState<boolean>(false);
   const [iconColor, setIconColor] = useState<string>("#fff");
@@ -34,6 +34,7 @@ export const IconButton = ({
       className={classNames("icon-button", backColor)}
       onMouseEnter={() => setHover(true)}
       onMouseLeave={() => setHover(false)}
+      onClick={onClick}
     >
       <Icon name={name} size={size} viewBox={viewBox} color={iconColor} />
     </div>
